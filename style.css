@@ -1,0 +1,29 @@
+body{
+    background-color: #026aa7;;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.25em;
+}
+
+.board {
+
+    height: 100vh;
+}
+
+.column{
+
+    display: inline-block;
+    width: 270px;
+    height: 100%;
+}
+
+.list{
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    max-height: 100%;
+
+}
+
+

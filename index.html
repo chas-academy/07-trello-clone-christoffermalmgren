@@ -4,59 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>jQuery UI - Trello Clone (yay!)</title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Optionally include jquery ui css here -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="board">
+    <section class="board">
         <div class="column">
             <div class="list">
-                <div class="list__header">
+                <div class="list-header">
                     Todo
+                    <button class="button delete">X</button>
                 </div>
-                <ul class="list__card">
+                <ul class="list-cards">
                     <li class="card">
                         Card #1
+                        <button class="button-delete">X</button>
+                    </li>
+                    <li class="add-new">
+                        <form class="new-card" action="index.html">
+                            <input type="text" name="title" placeholder="Please name the card" />
+                            <button class="button add">Add new card</button>
+                        </form>
                     </li>
                 </ul>
             </div>
         </div>
-    
-
-    
         <div class="column">
             <div class="list">
-                <div class="list__header">
+                <div class="list-header">
                     Doing
+                    <button class="button delete">X</button>
                 </div>
-                <ul class="list__card">
+                <ul class="list-cards">
                     <li class="card">
-                         Card #2
+                        Card #2
+                        <button class="button-delete">X</button>
                     </li>
-                 </ul>
-            </div>
-        </div>
-    
-
-    
-        <div class="column">
-            <div class="list">
-                <div class="list__header">
-                    Done
-                </div>
-                <ul class="list__card">
-                    <li class="card">
-                    Card #3
-                </li>
+                    <li class="add-new">
+                        <form class="new-card" action="index.html">
+                            <input type="text" name="title" placeholder="Please name the card" />
+                            <button class="button add">Add new card</button>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>
+        <div class="column">
+            <div class="list">
+                <div class="list-header">
+                    Done
+                    <button class="button delete">X</button>
+                </div>
+                <ul class="list-cards">
+                    <li class="card">
+                        Card #3
+                        <button class="button-delete">X</button>
+                    </li>
+                    <li class="add-new">
+                        <form class="new-card" action="index.html">
+                            <input type="text" name="title" placeholder="Please name the card" />
+                            <button class="button add">Add new card</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <button id="new-list" class="button">Add new list</button>
+        </div>
+    </section>
 
-    <script src="app.js"></script>
+    <div id="list-creation-dialog" title="Create new list" style="height: 40px">
+        <form> 
+            <input type="text" name="title" placeholder="List title" />
+        </form>
+    </div>
 </body>
+<!--<script src="app.js"></script>-->
+<script src="try.js"></script>
 </html>

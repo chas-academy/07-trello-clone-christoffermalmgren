@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
             event.preventDefault(); //gör så sidan inte laddas om.
             var formData = $(event.target).serializeArray();
-            $(event.target).find('input').val();
+            $(event.target).find('input').val("");
 
             var addNewCard = `
 
@@ -27,7 +27,8 @@ $( document ).ready(function() {
             
                //remove card
             $(".button-delete").on('click', function(){
-            $(this).closest(".card").remove();
+            $(this).closest( ".card" ).fadeOut("slow");
+            
         });
      });
 
@@ -64,7 +65,7 @@ $( document ).ready(function() {
             //remove list. när du på Xet på listan så kickar functionen igång,
             //this refererar till button-delete och närmsta column class som tas bort.
     $(".button-delete").on('click', function(){
-        $(this).closest(".column").remove();
+        $(this).closest(".column").toggle("slide");
 
     });
 });

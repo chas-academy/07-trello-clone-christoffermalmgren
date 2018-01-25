@@ -42,6 +42,10 @@ input {
   text-indent: 8px;
 }
 
+.hide {
+  display: none;
+}
+
 .board {
     height: 100vh;
 }
@@ -57,7 +61,7 @@ input {
 }
 
 .list {
-  background: #ec7881;
+  background: #e2e4e6;
   border-radius: 3px;
   box-sizing: border-box;
   display: flex;
@@ -97,11 +101,15 @@ input {
   min-height: 0;
 }
 
-.list-cards .add-new {
+.list-cards .add-new-card {
   margin: 10px 0;
 }
 
-.list-cards .add-new .button {
+.list-cards .add-new-card form {
+
+}
+
+.list-cards .add-new-card .button {
   width: 100%;
 }
 
@@ -153,6 +161,28 @@ input {
   margin-right: 8px;
 }
 
+.ui-dialog .tab {
+  padding: 10px 12px;
+  display: inline-flex;
+  color: #fff;
+  background: gray;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.ui-dialog .tab a {
+  color: #fff;
+}
+
+.ui-dialog .tab.ui-state-active {
+  background: lightgray;
+}
+
+.ui-datepicker-today,
+.ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today {
+  background: yellow;
+}
+
 .ui-button,
 .button {
   display: inline-flex;
@@ -190,3 +220,27 @@ input {
   box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.5);
   transform: rotate(4deg);
 }
+
+.add-column{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-new{
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    align-items: center;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.new{
+    margin-bottom: 30px;
+    text-align: -webkit-center;
+    max-height: 100%;
+    
+}
+
+
+

@@ -14,6 +14,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -82,9 +84,24 @@
 
     </div>
 
-    
+    <div id="card-details-dialog" title="Card details">
+        <div id="tabs">
+            <ul class="tabs">
+                <li class="tab"><a href="#tabs-1">Details</a></li>
+                <li class="tab"><a href="#tabs-2">Due date</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>This is the card details dialog - tab 1</p>
+            </div>
+            <div id="tabs-2">
+                <p>This is the card details dialog - tab 2</p>
+                <p>Datepicker goes here</p>
+            </div>
+        </div>
+    </div>
 </body>
 <!--<script src="app.js"></script>-->
 <script src="try.js"></script>
 
 </html>
+

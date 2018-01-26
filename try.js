@@ -99,4 +99,14 @@ $(document).ready(function() {
   $("body").on("click", ".card-dialog", function() {
     $(cardDetailsDialog).dialog("open");
   });
+
+
+    // när du trycker på tabben i #tabs-2 kommer det upp ett datum popup fönster.
+    $("#datepicker").datepicker();
+       
+
+
+        
+        
+    
 });

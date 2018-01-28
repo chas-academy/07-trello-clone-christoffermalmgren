@@ -242,5 +242,10 @@ input {
     
 }
 
+#ui-datepicker-div{
+  background-color: white;
+  width: 270px;
+}
+
 
 

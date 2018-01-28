@@ -101,7 +101,7 @@ $(document).ready(function() {
   });
 
 
-    // när du trycker på tabben i #tabs-2 kommer det upp ett datum popup fönster.
+    // i tabben due date dyker de upp ettt input field, trycker du där kommer en datepicker upp.
     $("#datepicker").datepicker();
        
 
